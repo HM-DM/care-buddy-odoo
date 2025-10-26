@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import Babies from "./pages/Babies";
 import BabyProfile from "./pages/BabyProfile";
 import DailyLogs from "./pages/DailyLogs";
+import AddLogEntry from "./pages/AddLogEntry";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/babies" element={<Babies />} />
           <Route path="/babies/:id" element={<BabyProfile />} />
           <Route path="/logs" element={<DailyLogs />} />
+          <Route path="/add-log" element={<AddLogEntry />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

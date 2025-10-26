@@ -15,6 +15,7 @@ export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
     { icon: Home, label: 'Dashboard', path: '/' },
     { icon: Baby, label: 'Babies', path: '/babies' },
     { icon: FileText, label: 'Daily Logs', path: '/logs' },
+    { icon: Plus, label: 'Add Log Entry', path: '/add-log' },
   ];
 
   return (
