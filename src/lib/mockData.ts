@@ -1,0 +1,117 @@
+import { Baby, DailyLog } from '@/types/baby';
+
+export const mockBabies: Baby[] = [
+  {
+    id: '1',
+    name: 'Emma Johnson',
+    dateOfBirth: '2024-03-15',
+    gender: 'female',
+    parentName: 'Sarah Johnson',
+    parentPhone: '(555) 123-4567',
+    parentEmail: 'sarah.j@email.com',
+    allergies: 'Peanuts',
+    medicalNotes: 'Regular check-ups scheduled',
+    enrollmentDate: '2024-09-01',
+  },
+  {
+    id: '2',
+    name: 'Lucas Martinez',
+    dateOfBirth: '2023-11-20',
+    gender: 'male',
+    parentName: 'Maria Martinez',
+    parentPhone: '(555) 234-5678',
+    parentEmail: 'maria.m@email.com',
+    allergies: 'None',
+    medicalNotes: 'Up to date on vaccinations',
+    enrollmentDate: '2024-08-15',
+  },
+  {
+    id: '3',
+    name: 'Sophia Chen',
+    dateOfBirth: '2024-01-10',
+    gender: 'female',
+    parentName: 'David Chen',
+    parentPhone: '(555) 345-6789',
+    parentEmail: 'david.c@email.com',
+    allergies: 'Dairy',
+    medicalNotes: 'Lactose intolerant, use soy milk',
+    enrollmentDate: '2024-07-01',
+  },
+  {
+    id: '4',
+    name: 'Oliver Smith',
+    dateOfBirth: '2023-08-05',
+    gender: 'male',
+    parentName: 'Jennifer Smith',
+    parentPhone: '(555) 456-7890',
+    parentEmail: 'jen.smith@email.com',
+    allergies: 'None',
+    medicalNotes: 'No known issues',
+    enrollmentDate: '2024-06-10',
+  },
+];
+
+export const mockDailyLogs: DailyLog[] = [
+  {
+    id: '1',
+    babyId: '1',
+    date: '2025-10-26',
+    meals: [
+      {
+        id: 'm1',
+        time: '08:00',
+        type: 'bottle',
+        description: 'Formula',
+        amount: '6 oz',
+        finished: true,
+      },
+      {
+        id: 'm2',
+        time: '11:30',
+        type: 'solid',
+        description: 'Mashed sweet potato and carrots',
+        amount: '1/2 cup',
+        finished: true,
+      },
+      {
+        id: 'm3',
+        time: '14:00',
+        type: 'snack',
+        description: 'Banana slices',
+        amount: 'Small',
+        finished: false,
+      },
+    ],
+    naps: [
+      {
+        id: 'n1',
+        startTime: '09:30',
+        endTime: '11:00',
+        duration: 90,
+      },
+      {
+        id: 'n2',
+        startTime: '13:00',
+        endTime: '14:30',
+        duration: 90,
+      },
+    ],
+    activities: [
+      {
+        id: 'a1',
+        time: '10:00',
+        type: 'play',
+        description: 'Building blocks and sensory toys',
+      },
+      {
+        id: 'a2',
+        time: '15:00',
+        type: 'outdoor',
+        description: 'Playground time - enjoyed the swings',
+      },
+    ],
+    diaperChanges: 5,
+    mood: 'happy',
+    notes: 'Great day! Emma was very active and social.',
+  },
+];
